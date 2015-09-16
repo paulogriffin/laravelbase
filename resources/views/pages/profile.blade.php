@@ -8,10 +8,8 @@
           <img src="{{ $user->photo }}" alt="...">
           <div class="caption">
             <h3>{{ $user->name }}</h3>
-            <p>Id {{ \Auth::user()->id }}</p>
-              <p>{{ $user->email }}</p>
-              <p>{{ $user->bio }}</p>
-              <p><i class="glyphicon glyphicon-map-marker"></i> {{  $user->location }}</p>
+              <p><i class="glyphicon glyphicon-bookmark"></i> {{ $user->bio }}</p>
+              <p><i class="glyphicon glyphicon-map-marker"></i> {{  $user->city }}, {{  $user->country }}</p>
               <p><i class="glyphicon glyphicon-time text-muted"></i> Joined {{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $user->created_at)->format('F Y') }}</p> 
           </div>
         </div>
