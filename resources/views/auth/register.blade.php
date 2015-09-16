@@ -3,7 +3,7 @@
 @section('content')
 	
 <div class="col-md-6 col-md-offset-3">
-	<h1>Sign up</h1>
+	<h2 class = "text-muted">Sign up</h2>
 	<hr>
 	<div class="row">
 		@include('partials.errors')
@@ -26,7 +26,7 @@
 		    </div>
 
 		   	<div class="form-group">
-		        <button type="submit" class="form-control btn btn-danger">Login</button>
+		        <button type="submit" class="form-control btn btn-danger">Sign up</button>
 		    </div>
 		</form>
 	</div>

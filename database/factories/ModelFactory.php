@@ -30,7 +30,8 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
         'role' => 'Rower',
         'name' => $faker->name($gender = null|'male'|'female'), 
-        'location' => $faker->city . ', ' . $faker->country,
+        'city' => $faker->city,
+        'country' => $faker->country,
         'bio' => $faker->sentence($nbWords = 27),
         'email' => $faker->safeEmail,
         'photo' => $faker->imageUrl($width = 250, $height = 300),

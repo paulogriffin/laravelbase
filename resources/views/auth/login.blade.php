@@ -3,7 +3,7 @@
 @section('content')
 	
 <div class="col-md-6 col-md-offset-3">
-	<h1>Login</h1>
+	<h2 class = "text-muted">Login</h2>
 	<hr>
 	<div class="row">
 		@include('partials.errors')

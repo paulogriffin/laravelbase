@@ -37,16 +37,14 @@
                 </div>
                 
                 <div class="form-group form-inline">
-                      <input type="text" name="location" class="form-control" id="title" placeholder="City" value="{{ $user->location }}">
-                      <input type="text" name="activity" class="form-control" id="title" placeholder="Country" value="">
+                      <input type="text" name="city" class="form-control" id="title" placeholder="City" value="{{ $user->city }}">
+                      <input type="text" name="country" class="form-control" id="title" placeholder="Country" value="{{ $user->country }}">
 
                 </div>
 
                 <div class="form-group">
                   <textarea class="form-control" name = "bio" rows="4" placeholder="Describe yourself">{{ $user->bio }}</textarea>
                 </div>
-
-
 
 
                 <div class="form-group">

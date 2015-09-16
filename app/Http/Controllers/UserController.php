@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+
+use App\Http\Requests\UpdateProfileRequest;
+
 use App\Http\Controllers\Controller;
 
 class UserController extends Controller
@@ -70,9 +73,16 @@ class UserController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateProfileRequest $request)
     {
-        //
+        $user = \Auth::User();
+
+        $user->Update(['name' =>  $request->name, 
+                        'city' =>  $request->city, 
+                        'country' =>  $request->country, 
+                        'bio' =>  $request->bio]);
+
+        return back();
     }
 
     /**
